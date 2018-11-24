@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90d4bc" height="143.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" width="1280.0" />
+      <ImageView fitHeight="138.0" fitWidth="160.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/KU_SubLogo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="519.0" layoutY="40.0" prefHeight="73.0" prefWidth="254.0" text="Curriculum" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <ChoiceBox layoutX="1079.0" layoutY="162.0" prefHeight="37.0" prefWidth="172.0" />
+      <TableView layoutX="157.0" layoutY="212.0" prefHeight="449.0" prefWidth="981.0">
+        <columns>
+          <TableColumn prefWidth="211.0" text="Course ID" />
+          <TableColumn prefWidth="563.0" text="Course Name" />
+            <TableColumn minWidth="0.0" prefWidth="206.0" text="Prerequisite ID" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
