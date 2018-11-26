@@ -7,7 +7,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProjectLogIn.NisitInfo">
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProjectLogIn.NisitInfoController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90d4bc" height="143.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" width="1280.0" />
       <ImageView fitHeight="138.0" fitWidth="160.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
