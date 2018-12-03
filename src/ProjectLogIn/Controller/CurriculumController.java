@@ -1,6 +1,7 @@
-package ProjectLogIn;
+package ProjectLogIn.Controller;
 
-import javafx.beans.value.ChangeListener;
+import ProjectLogIn.Model.Subject;
+import ProjectLogIn.Model.TableSubject;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -32,7 +33,7 @@ public class CurriculumController {
     private TableColumn<Subject,String> prerequisiteID;
     @FXML
     private TableColumn<Subject,Integer> credit;
-    private ArrayList<Subject> subjectAll = tableSubject.getTs();
+    private ArrayList<Subject> subjectAll = tableSubject.getTsall();
     private ArrayList<Subject>subjects11=tableSubject.getYear11();
     private ArrayList<Subject>subjects12=tableSubject.getYear12();
     private ArrayList<Subject>subjects21=tableSubject.getYear21();
@@ -122,7 +123,7 @@ public class CurriculumController {
     public void handlBackBtn(ActionEvent event) throws IOException {
         back= (Button) event.getSource();
         Stage stage = (Stage)back.getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Main.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../UI/Main.fxml"));
         stage.setScene(new Scene(loader.load()));
         stage.show();
 

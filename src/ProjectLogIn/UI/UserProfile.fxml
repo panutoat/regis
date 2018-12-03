@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -7,19 +8,20 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProjectLogIn.NisitInfoController">
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProjectLogIn.Controller.UserProfileController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90d4bc" height="143.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" width="1280.0" />
       <ImageView fitHeight="138.0" fitWidth="160.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../photos/KU_SubLogo.png" />
+            <Image url="@../../photos/KU_SubLogo.png" />
          </image>
       </ImageView>
-      <Label layoutX="245.0" layoutY="220.0" prefHeight="70.0" prefWidth="771.0" text="*Name Surname*">
+      <Button fx:id="back" layoutX="29.0" layoutY="22.0" mnemonicParsing="false" onAction="#handlBackBtn" opacity="1.0E-11" prefHeight="104.0" prefWidth="81.0" />
+      <Label fx:id="name" layoutX="245.0" layoutY="220.0" prefHeight="70.0" prefWidth="771.0" text="Panut Siamrat">
          <font>
             <Font size="40.0" />
          </font></Label>
-      <Label layoutX="245.0" layoutY="330.0" prefHeight="43.0" prefWidth="406.0" text="*Student ID*">
+      <Label fx:id="id" layoutX="245.0" layoutY="330.0" prefHeight="43.0" prefWidth="406.0" text="5910450514">
          <font>
             <Font size="35.0" />
          </font>
@@ -32,14 +34,15 @@
          <font>
             <Font size="20.0" />
          </font></Label>
-      <Label layoutX="245.0" layoutY="420.0" text="Academic Year 3">
-         <font>
-            <Font size="20.0" />
-         </font></Label>
-      <Label alignment="CENTER" layoutX="519.0" layoutY="40.0" prefHeight="69.0" prefWidth="285.0" text="Student Info" textFill="WHITE">
+      <Label alignment="TOP_LEFT" layoutX="519.0" layoutY="40.0" prefHeight="70.0" prefWidth="435.0" text="User Profile" textFill="WHITE">
          <font>
             <Font size="50.0" />
          </font>
       </Label>
+      <ImageView fitHeight="347.0" fitWidth="275.0" layoutX="737.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../photos/panut.jpg" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

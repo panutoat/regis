@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProjectLogIn.Controller.CurriculumController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90d4bc" height="143.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" width="1280.0" />
+      <ImageView fitHeight="138.0" fitWidth="160.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../photos/KU_SubLogo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="TOP_LEFT" layoutX="519.0" layoutY="28.0" prefHeight="70.0" prefWidth="497.0" text="Curriculum" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="box" accessibleRole="BUTTON" layoutX="1079.0" layoutY="162.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="40.0" prefWidth="177.0" />
+      <TableView fx:id="table" layoutX="64.0" layoutY="212.0" prefHeight="466.0" prefWidth="974.0">
+        <columns>
+          <TableColumn fx:id="courseID" prefWidth="179.0" styleClass="" text="Course ID" />
+          <TableColumn fx:id="courseName" prefWidth="432.0" text="Course Name" />
+            <TableColumn fx:id="credit" prefWidth="79.0" text="Credit" />
+            <TableColumn fx:id="prerequisiteID" maxWidth="450.0" minWidth="0.0" prefWidth="295.0" text="Prerequisite ID" />
+        </columns>
+      </TableView>
+      <Button fx:id="back" layoutX="29.0" layoutY="22.0" mnemonicParsing="false" onAction="#handlBackBtn" opacity="1.0E-11" prefHeight="104.0" prefWidth="81.0" text="Back" />
+   </children>
+</AnchorPane>

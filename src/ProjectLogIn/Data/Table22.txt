@@ -1,0 +1,7 @@
+01355XXX,English,3,-
+01417322,Introductory Linear Algebra,3,01417112
+01418216,Principles of Programming Languages,3,01418116
+01418221,Fundamentals of Database Systems,3,01418116
+01418232,Algorithm Design and Analysis,3,01418231
+01422111,Principles of Statistics,3,no
+01XXXXXX,วิชาศึกษาทั่วไปในกลุ่มวิชาสังคมศาสตร์,3,-

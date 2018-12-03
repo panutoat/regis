@@ -1,4 +1,4 @@
-package ProjectLogIn;
+package ProjectLogIn.Model;
 
 public class Subject implements Comparable {
     private String ID;
@@ -33,10 +33,10 @@ public class Subject implements Comparable {
     }
     @Override
     public String toString() {
-        return "SubjectID : " + ID +
-                " , Subjectname : " + name  +
-                " , Credit : " + credit +
-                " , PreSubject :" + pre ;
+        return  ID +
+                "," + name  +
+                "," + credit +
+                ","+pre ;
     }
     @Override
     public int compareTo(Object o) {

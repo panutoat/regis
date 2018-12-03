@@ -1,5 +1,6 @@
-package ProjectLogIn;
+package ProjectLogIn.Controller;
 
+import ProjectLogIn.Model.TableStudent;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,12 +18,14 @@ public class LoginController {
     @FXML
     protected Button login;
 
+    TableStudent ts = new TableStudent();
 
-    @FXML
+
+    /*@FXML
     public void handleLoginBtn(ActionEvent event) throws IOException {
         String userID=ID.getText();
         String userPass=password.getText();
-        if(userID.equals("panut")&&userPass.equals("1234")){
+        if(userID.equals("p")&&userPass.equals("1")){
             login = (Button) event.getSource();
             Stage stage = (Stage) login.getScene().getWindow();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("Main.fxml"));
@@ -30,6 +33,21 @@ public class LoginController {
             stage.show();
         }
 
+    }*/
+
+    @FXML
+    public void handleLoginBtn(ActionEvent event){
+        if (ts.checkLogin(ID.getText(),password.getText())){
+            login = (Button) event.getSource();
+            Stage stage = (Stage) login.getScene().getWindow();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("../UI/Main.fxml"));
+            try {
+                stage.setScene(new Scene(loader.load()));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            stage.show();
+        }
     }
 
 }

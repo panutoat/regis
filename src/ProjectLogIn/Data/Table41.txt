@@ -1,0 +1,3 @@
+01418399,Computer Science Project Preparation,1,01418321
+01418XXX,วิชาเฉพาะเลือก,3,-
+01418XXX,วิชาเลือกเสรี,3,-

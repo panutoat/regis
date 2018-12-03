@@ -1,0 +1,6 @@
+01355XXX,English,3,-
+01418114,Introduction to Computer Science,4,no
+01418131,Digital Computer Logic,3,no
+01420115,Laboratory in Abridged Physic,1,no
+01420119,Abridged Physics,3,no
+01XXXXXX,วิชาศึกษาทั่วไปในกลุ่มวิชามนุษยศาสตร์,3,-

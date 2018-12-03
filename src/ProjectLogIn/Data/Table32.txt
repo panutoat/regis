@@ -1,0 +1,6 @@
+01132101,Modern Entrepreneur,3,no
+01418332,Operating Systems,4,01418331
+01418333,Formal Language and Automata Theory,3,01418132
+01418343,Intellectual Property for Software and Digital Contents,3,no
+01418497,Seminar,1,01418221,01418216,01418232
+01418XXX,วิชาเฉพาะเลือก,3,-

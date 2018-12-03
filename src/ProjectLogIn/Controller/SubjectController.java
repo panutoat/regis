@@ -1,5 +1,7 @@
-package ProjectLogIn;
+package ProjectLogIn.Controller;
 
+import ProjectLogIn.Model.Subject;
+import ProjectLogIn.Model.TableSubject;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -22,19 +24,11 @@ public class SubjectController {
         System.out.println(subject);
         setDisplay();
     }
-    /*@FXML
-    public void initialize(){
-        subject=tableSubject.getSubject(subject.getID());
-        CourseName.setText(subject.getName());
-        CourseID.setText(subject.getID());
-        preID.setText(subject.getPre());
-       // preName.setText(tableSubject.getSubject(subject.getPre()));
-    }*/
     @FXML
     public void handlBackBtn(ActionEvent event) throws IOException {
         back= (Button) event.getSource();
         Stage stage = (Stage)back.getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Main.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../UI/Main.fxml"));
         stage.setScene(new Scene(loader.load()));
         stage.show();
 

@@ -8,16 +8,15 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="ProjectLogIn.SubjectController">
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProjectLogIn.Controller.SubjectController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#90d4bc" height="143.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" width="1280.0" />
       <ImageView fitHeight="138.0" fitWidth="160.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../photos/KU_SubLogo.png" />
+            <Image url="@../../photos/KU_SubLogo.png" />
          </image>
       </ImageView>
-      <Label fx:id="CourseName" layoutX="156.0" layoutY="212.0" prefHeight="74.0" prefWidth="453.0" text="*Course Name*">
+      <Label fx:id="CourseName" layoutX="156.0" layoutY="238.0" prefHeight="74.0" prefWidth="453.0" text="*Course Name*">
          <font>
             <Font size="35.0" />
          </font>
@@ -27,17 +26,12 @@
             <Font size="30.0" />
          </font>
       </Label>
-      <Label fx:id="preName" layoutX="153.0" layoutY="461.0" prefHeight="71.0" prefWidth="640.0" text="Prerequisite Course : ">
+      <Label fx:id="preID" layoutX="450.0" layoutY="461.0" prefHeight="69.0" prefWidth="459.0" text="*Prerequisite ID*">
          <font>
             <Font size="25.0" />
          </font>
       </Label>
-      <Label fx:id="preID" layoutX="153.0" layoutY="518.0" prefHeight="69.0" prefWidth="459.0" text="Prerequisite ID : ">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label layoutX="519.0" layoutY="40.0" prefHeight="73.0" prefWidth="264.0" text="Course Info" textFill="WHITE">
+      <Label alignment="TOP_LEFT" layoutX="519.0" layoutY="40.0" prefHeight="74.0" prefWidth="367.0" text="Course Info" textFill="WHITE">
          <font>
             <Font size="50.0" />
          </font>
@@ -47,5 +41,10 @@
             <Font size="27.0" />
          </font>
       </Button>
+      <Label fx:id="preID1" layoutX="153.0" layoutY="461.0" prefHeight="69.0" prefWidth="459.0" text="Prerequisite Course ID : ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

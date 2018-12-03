@@ -1,0 +1,6 @@
+01418321,System Analysis and Design,3,01418221
+01418331,Assembly Language and Computer Architecture,4,01418116,01418131
+01418351,Computer Communications and Protocols,3,01418116
+01418XXX,วิชาเฉพาะเลือก,3,-
+01XXXXXX,วิชาศึกษาทั่วไปในกลุ่มวิชาสังคมศาสตร์,3,-
+01XXXXXX,วิชาเลือกเสรี,3,-

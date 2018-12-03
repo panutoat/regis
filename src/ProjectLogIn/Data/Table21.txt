@@ -1,0 +1,7 @@
+01175XXX,กิจกรรมพละศึกษา,3,-
+01355XXX,English,3,-
+01XXXXXX,วิชาศึกษาทั่วไปในกลุ่มวิชามนุษยศาสตร์,3,-
+01417112,Calculus II,3,01417111
+01418132,Fundamentals of Computing,4,no
+01418217,Software Construction,3,01418116
+01418231,Data Structure,3,01418116

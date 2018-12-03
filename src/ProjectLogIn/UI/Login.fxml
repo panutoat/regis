@@ -1,21 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProjectLogIn.LoginController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProjectLogIn.Controller.LoginController">
    <children>
       <TextField fx:id="ID" layoutX="542.0" layoutY="342.0" prefHeight="27.0" prefWidth="197.0" promptText="Nontri Account" />
       <TextField fx:id="password" layoutX="542.0" layoutY="412.0" prefHeight="27.0" prefWidth="197.0" promptText="Password" />
       <Button layoutX="648.0" layoutY="471.0" mnemonicParsing="false" text="Cancel" />
       <Button fx:id="login" layoutX="564.0" layoutY="471.0" mnemonicParsing="false" onAction="#handleLoginBtn" text="Log In" />
-      <ImageView fitHeight="227.0" fitWidth="250.0" layoutX="523.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="227.0" fitWidth="250.0" layoutX="162.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../photos/KU_SubLogo.png"/>
+            <Image url="@../../photos/KU_SubLogo.png" />
          </image>
       </ImageView>
+      <Label layoutX="402.0" layoutY="125.0" text="Information System">
+         <font>
+            <Font size="80.0" />
+         </font>
+      </Label>
    </children>
 </Pane>
